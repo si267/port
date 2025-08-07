@@ -1,0 +1,85 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="projects" style="
+    background-color: #0d0d0d;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+">
+    <h2 style="
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 50px;
+        color: #00BFFF;
+        animation: fadeIn 1.2s;
+    ">
+        My Projects & Achievements
+    </h2>
+
+    <div style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+    ">
+
+        <!-- Project 1 -->
+        <div style="background-color: #1a1a1a; border: 1px solid #00BFFF; padding: 20px; border-radius: 10px; animation: slideUp 1s ease-out;">
+            <h3 style="color: #00BFFF;">AI Chatbot</h3>
+            <p>Developed a real-time chatbot using Django and Natural Language Processing (NLP) to handle user queries smartly and efficiently.</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div style="background-color: #1a1a1a; border: 1px solid #00BFFF; padding: 20px; border-radius: 10px; animation: slideUp 1.2s ease-out;">
+            <h3 style="color: #00BFFF;">Toy Shop Website</h3>
+            <p>Built a fully functional e-commerce toy store using Django with features like user login, cart management, and admin control panel.</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div style="background-color: #1a1a1a; border: 1px solid #00BFFF; padding: 20px; border-radius: 10px; animation: slideUp 1.4s ease-out;">
+            <h3 style="color: #00BFFF;">Portfolio Website</h3>
+            <p>Designed and developed a personal portfolio using Django showcasing my projects, timeline, contact, and achievements.</p>
+        </div>
+
+        <!-- Smart India Hackathon -->
+        <div style="background-color: #1a1a1a; border: 1px solid #00BFFF; padding: 20px; border-radius: 10px; animation: slideUp 1.6s ease-out;">
+            <h3 style="color: #00BFFF;">Smart India Hackathon 2025</h3>
+            <p>Proposed a tech solution for women's safety using smart poles equipped with cameras, speakers, and emergency response systems.</p>
+        </div>
+
+        <!-- Workshop -->
+        <div style="background-color: #1a1a1a; border: 1px solid #00BFFF; padding: 20px; border-radius: 10px; animation: slideUp 1.8s ease-out;">
+            <h3 style="color: #00BFFF;">Workshop – Generative AI</h3>
+            <p>Attended a hands-on workshop on Generative AI at IIT Madras, exploring concepts like diffusion models and AI-generated content.</p>
+        </div>
+
+        <!-- Paper Presentation -->
+        <div style="background-color: #1a1a1a; border: 1px solid #00BFFF; padding: 20px; border-radius: 10px; animation: slideUp 2s ease-out;">
+            <h3 style="color: #00BFFF;">Paper Presentation – 5G</h3>
+            <p>Presented a technical paper on 5G technology advancements and its future scope at Bannari Amman College, Erode.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Animations -->
+<style>
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+</style>
+{% endblock %}

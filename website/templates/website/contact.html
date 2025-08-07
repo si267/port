@@ -1,0 +1,98 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="contact" style="background-color: #000; padding: 100px 20px; color: white; font-family: 'Poppins', sans-serif; text-align: center;">
+
+    <h2 style="font-size: 2.8rem; font-weight: bold; margin-bottom: 20px; color: #00BFFF; animation: fadeIn 1s ease-in-out;">
+        Contact Me
+    </h2>
+
+    <p style="margin-bottom: 40px; font-size: 1.1rem;">
+        Have a project in mind or just want to say hi? Let’s connect.
+    </p>
+
+    <form method="post" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; animation: slideUp 1.3s ease-out;">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Your Name" required style="padding: 12px; border-radius: 5px; font-size: 1rem; background-color: #111; border: 1px solid #333; color: white;">
+        <input type="email" name="email" placeholder="Your Email" required style="padding: 12px; border-radius: 5px; font-size: 1rem; background-color: #111; border: 1px solid #333; color: white;">
+        <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 12px; border-radius: 5px; font-size: 1rem; background-color: #111; border: 1px solid #333; color: white;"></textarea>
+        <button type="submit" style="background-color: #00BFFF; color: black; font-weight: bold; border: none; padding: 12px; border-radius: 5px; cursor: pointer;">
+            Send Message
+        </button>
+    </form>
+
+    {% if messages %}
+        <div class="toast" id="toast-message">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <!-- Map -->
+    <div style="margin: 40px auto; max-width: 320px;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.5484817268985!2d77.96302237505058!3d10.314014989831594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00af699da0a661%3A0x50b188f61d48979f!2sSSM%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1694706920347!5m2!1sen!2sin"
+            width="300" height="200"
+            style="border:0; border-radius: 12px; box-shadow: 0 0 10px rgba(0,191,255,0.4);"
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Social Icons -->
+    <div style="margin-top: 20px;">
+        <a href="https://www.instagram.com/" target="_blank" style="color: white; font-size: 1.8rem; margin: 0 10px;" class="icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/siva-sankari-5355442a3" target="_blank" style="color: white; font-size: 1.8rem; margin: 0 10px;" class="icon linkedin">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+
+    <p style="margin-top: 40px; font-size: 0.95rem; color: #ccc;">
+        SSM Institute of Engineering and Technology, Dindigul, Tamil Nadu
+    </p>
+</section>
+
+<!-- Styles -->
+<style>
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.toast {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: #00BFFF;
+    color: black;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 9999;
+    animation: fadeIn 1s ease-in-out, fadeOut 1s ease-in-out 4s forwards;
+}
+
+@keyframes fadeOut {
+    to { opacity: 0; transform: translateY(-20px); }
+}
+
+.icon {
+    transition: transform 0.3s, color 0.3s;
+}
+.icon:hover {
+    transform: scale(1.2);
+}
+.icon.instagram:hover { color: #E1306C; }
+.icon.linkedin:hover { color: #0077B5; }
+</style>
+
+<script src="https://kit.fontawesome.com/a2e8c70ac0.js" crossorigin="anonymous"></script>
+{% endblock %}

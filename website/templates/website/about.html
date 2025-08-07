@@ -1,0 +1,207 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ABOUT ME SECTION -->
+<section id="about" style="background-color: #0d0d0d; color: white; padding: 80px 20px;">
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+        <h2 style="font-size: 2.8rem; color: #00BFFF; font-weight: bold; margin-bottom: 20px; animation: fadeIn 1.2s;">
+            About Me
+        </h2>
+        <p style="font-size: 1.1rem; color: #ccc; line-height: 1.8; animation: fadeIn 1.5s;">
+            Hello! I'm <strong style="color: #00BFFF;">Sivasankari</strong>, a passionate and dedicated final year 
+            B.E. Electronics and Communication Engineering student at <strong>SSM Institute of Engineering and Technology</strong>.
+            I specialize in building clean and user-friendly web experiences using technologies like <strong>Django, HTML, CSS, and JavaScript</strong>.
+            <br><br>
+            I love solving real-world problems through tech, and I’ve also explored areas like <strong>chatbots, e-commerce platforms</strong>, and participated in technical events like paper presentations on <strong>5G Technology</strong>. I believe in continuous learning and strive to enhance my skills every day.
+        </p>
+    </div>
+</section>
+
+<!-- TIMELINE SECTION -->
+<section id="timeline" style="background-color: #0d0d0d; color: white; padding: 60px 20px;">
+    <h3 style="color: #00BFFF; text-align: center; font-size: 2.2rem; margin-bottom: 50px;">🎓 My Academic Journey</h3>
+    <div class="timeline-container">
+        <div class="timeline-block">
+            <div class="marker"></div>
+            <div class="timeline-content">
+                <h4>2017 – 2018</h4>
+                <p>Completed <strong>10th Grade</strong> at Vidhyaa Vikas Matriculation Hr. Sec. School with <strong>75%</strong>.</p>
+            </div>
+        </div>
+        <div class="timeline-block">
+            <div class="marker"></div>
+            <div class="timeline-content">
+                <h4>2019 – 2020</h4>
+                <p>Completed <strong>12th Grade</strong> at Vidhyaa Vikas Matriculation Hr. Sec. School with <strong>85%</strong>.</p>
+            </div>
+        </div>
+        <div class="timeline-block">
+            <div class="marker"></div>
+            <div class="timeline-content">
+                <h4>2022 – 2026</h4>
+                <p>Pursuing <strong>B.E. Electronics and Communication Engineering</strong> at SSM Institute of Engineering and Technology<br>
+                   Current CGPA: <strong>8.0</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SKILLS SECTION -->
+<section id="skills" style="background-color: #0d0d0d; color: white; padding: 60px 20px;">
+    <h3 style="color: #00BFFF; text-align: center; font-size: 2.2rem; margin-bottom: 40px;">💡 My Skills</h3>
+
+    <div class="skills-container">
+        <div class="skill-card">
+            <h4>🌐 Web Development</h4>
+            <p>Django, HTML5, CSS3, JavaScript, Bootstrap,python</p>
+        </div>
+        <div class="skill-card">
+            <h4>⚙️ Tools & Platforms</h4>
+            <p>Git & GitHub, VS Code, Figma, MySQL</p>
+        </div>
+        <div class="skill-card">
+            <h4>🧠 Technical Knowledge</h4>
+            <p>APIs, CRUD Operations, Responsive Design,debug</p>
+        </div>
+        <div class="skill-card">
+            <h4>🗣 Soft Skills</h4>
+            <p>Teamwork, Communication, Problem Solving, Time Management</p>
+        </div>
+    </div>
+</section>
+
+<!-- STYLES -->
+<style>
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.skill-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-left: 4px solid #00BFFF;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 191, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+}
+
+.skill-card h4 {
+    color: #00BFFF;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.skill-card p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+</style>
+<!-- FOOTER - REACH ME OUT -->
+<footer style="background-color: #0d0d0d; color: white; padding: 40px 20px; text-align: center;">
+    <h3 style="color: #00BFFF; font-size: 1.8rem; margin-bottom: 20px;">📬 Reach Me Out</h3>
+
+    <p style="margin-bottom: 10px; font-size: 1.1rem;">
+        I’m always open to new opportunities, collaborations, or just a tech talk!
+    </p>
+
+    <!-- Contact Info -->
+    <div style="margin: 20px 0;">
+        <p><strong>Email:</strong> <a href="mailto:sivasankari1456@gmail.com" style="color: #00BFFF;">sivasankari1456@gmail.com</a></p>
+        <p><strong>Location:</strong> Coimbatore, Tamil Nadu, India</p>
+    </div>
+
+    <!-- Social Icons -->
+    <div style="margin-top: 20px;">
+        <a href="https://www.linkedin.com/in/siva-sankari-5355442a3" target="_blank" style="margin: 0 10px; color: #00BFFF; font-size: 1.8rem;">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href=" https://github.com/si267" target="_blank" style="margin: 0 10px; color: #00BFFF; font-size: 1.8rem;">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/endlesslly___forever/" target="_blank" style="margin: 0 10px; color: #00BFFF; font-size: 1.8rem;">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- Copyright -->
+    <p style="margin-top: 30px; font-size: 0.9rem; color: #888;">&copy; 2025 Siva Sankari. All rights reserved.</p>
+</footer>
+
+<!-- Font Awesome CDN (for icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+
+<!-- STYLES -->
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.timeline-container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.timeline-block {
+    position: relative;
+    margin: 40px 0;
+    padding-left: 40px;
+    border-left: 2px solid #00BFFF;
+}
+
+.timeline-block:last-child {
+    border-left: none;
+}
+
+.marker {
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    background-color: #00BFFF;
+    border: 2px solid white;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 10px #00BFFF;
+}
+
+.timeline-content {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #00BFFF;
+    color: #ccc;
+    box-shadow: 0 3px 10px rgba(0, 191, 255, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.timeline-content:hover {
+    transform: scale(1.02);
+    background-color: #222;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+}
+
+.timeline-content h4 {
+    margin: 0 0 8px;
+    color: #00BFFF;
+}
+</style>
+
+{% endblock %}

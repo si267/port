@@ -1,0 +1,59 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+<section id="experience" style="background-color: #000; padding: 100px 20px; color: white; font-family: 'Poppins', sans-serif;">
+
+    <div class="container" style="text-align: center;">
+        <h2 style="font-size: 2.8rem; font-weight: bold; margin-bottom: 10px; color: #00BFFF; animation: fadeIn 1s ease-in-out;">
+            Experience
+        </h2>
+        <p style="margin-bottom: 50px; font-size: 1.1rem;">
+            Internships that shaped my technical skills and project development abilities.
+        </p>
+    </div>
+
+    <div style="max-width: 900px; margin: 0 auto; animation: slideUp 1.3s ease-out;">
+
+        <!-- Internship 1: Acmegrade -->
+        <div style="margin-bottom: 60px; background: #111; padding: 25px; border-radius: 10px; box-shadow: 0 0 10px #00BFFF33;">
+            <h3 style="color: #00BFFF;">Web Development Intern – Acmegrade, Bangalore (Online)</h3>
+            <p style="color: #ccc; font-style: italic;">3-Month Online Internship</p>
+            <p style="margin-top: 10px;">
+                During this internship, I explored the fundamentals of web development including HTML, CSS, Bootstrap, and Tailwind CSS. I developed a project that featured user login, registration, and a blog writing form. This hands-on experience helped me understand frontend frameworks, responsive design, and user form handling, laying a solid foundation for my future development work.
+            </p>
+        </div>
+
+        <!-- Internship 2: Alric Infotech -->
+        <div style="margin-bottom: 60px; background: #111; padding: 25px; border-radius: 10px; box-shadow: 0 0 10px #00BFFF33;">
+            <h3 style="color: #00BFFF;">Django Intern – Alric Infotech, Kerala (Online)</h3>
+            <p style="color: #ccc; font-style: italic;">1-Month Online Internship</p>
+            <p style="margin-top: 10px;">
+                At Alric Infotech, I learned the basics of Django and backend development. I worked on building a fully responsive personal portfolio using Django’s template system and integrated static content with dynamic views. This internship improved my understanding of MVC architecture, URL routing, template inheritance, and reusable components.
+            </p>
+        </div>
+
+        <!-- Internship 3: Nxtlogic Solutions -->
+        <div style="margin-bottom: 60px; background: #111; padding: 25px; border-radius: 10px; box-shadow: 0 0 10px #00BFFF33;">
+            <h3 style="color: #00BFFF;">Advanced Django Intern – Nxtlogic Solutions, Coimbatore (Offline)</h3>
+            <p style="color: #ccc; font-style: italic;">1-Month Offline Internship</p>
+            <p style="margin-top: 10px;">
+                This internship provided an in-depth understanding of Django’s advanced features including custom user authentication, email notifications, database operations, form handling, admin customization, and deployment techniques. I applied all these concepts to develop scalable Django applications and gained confidence in building real-world web solutions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<style>
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+</style>
+{% endblock %}
