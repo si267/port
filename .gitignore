@@ -1,0 +1,19 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Environment variables file
+.env
+
+# Django migrations
+*/migrations/*.py
+*/migrations/*.pyc
+
+# Database files
+db.sqlite3
+
+# Static files (if you collectstatic outside deployment)
+staticfiles/
+
+# VSCode settings (optional)
+.vscode/
